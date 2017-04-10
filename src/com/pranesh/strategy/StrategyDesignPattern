@@ -1,0 +1,12 @@
+OO Design principles
+
+1. We encapsulated what varies
+2. Favour composition over inheritance:
+    In the duck class we just used the references of the fly and Quack behaviours, this is called as composition.
+3. Program to interface than to implementation
+    In the duck classes we are programming to the fly and quack interfaces rather than dealing with the implementation of the class.
+
+
+Definition: Strategy patterns define a family of algorithms, encapsulates each one of them, makes them interchangeably usable.
+Strategy lets the algorithms vary independent of the client that use them.
+
