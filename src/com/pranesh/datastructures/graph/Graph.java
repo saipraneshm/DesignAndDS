@@ -1,10 +1,10 @@
-package com.pranesh.datastructures;
+package com.pranesh.datastructures.graph;
 
 /**
  * Created by sai pranesh on 09-Apr-17.
  */
 
-public class Main {
+public class Graph {
 
     public static void main(String args[]){
 
@@ -48,5 +48,43 @@ public class Main {
         dfsGraph.addEdge(4,5);
 
         dfsGraph.dfs();
+
+        System.out.println("");
+
+        BFSGraph bfsGraph = new BFSGraph();
+        bfsGraph.addVertex('A');
+        bfsGraph.addVertex('B');
+        bfsGraph.addVertex('C');
+        bfsGraph.addVertex('D');
+        bfsGraph.addVertex('E');
+        bfsGraph.addVertex('F');
+
+
+        bfsGraph.addEdge(0,1);
+        bfsGraph.addEdge(1,2);
+        bfsGraph.addEdge(0,3);
+        bfsGraph.addEdge(3,4);
+        bfsGraph.addEdge(4,5);
+
+        bfsGraph.bfs();
+
+        System.out.println(" ");
+
+        MST mst = new MST();
+        mst.addVertex('A');
+        mst.addVertex('B');
+        mst.addVertex('C');
+        mst.addVertex('D');
+        mst.addVertex('E');
+        mst.addVertex('F');
+
+
+        mst.addEdge(0,1);
+        mst.addEdge(1,2);
+        mst.addEdge(0,3);
+        mst.addEdge(3,4);
+        mst.addEdge(4,5);
+
+        mst.mst();
     }
 }

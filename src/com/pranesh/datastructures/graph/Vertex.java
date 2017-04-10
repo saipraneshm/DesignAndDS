@@ -1,4 +1,4 @@
-package com.pranesh.datastructures;
+package com.pranesh.datastructures.graph;
 
 /**
  * Created by sai pranesh on 09-Apr-17.
