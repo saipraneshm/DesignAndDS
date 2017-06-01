@@ -19,10 +19,18 @@ public class SortingMain {
         sort.insert(105);
         sort.insert(35);
 
-        sort.display();
+      /*  sort.display();
         sort.insertionSort();
         System.out.println("");
-        sort.display();
+        sort.display();*/
+
+        int[] sampleIntArr = new int[]{ 10 , 20 , 45 , 2, 5 , 97, 3, 56 , 36, 89, 46, 124, 37, 679, 20, 13 , 67, 32, 62, 11, 76 };
+
+        sort.quickSort(sampleIntArr);
+
+        for(int x : sampleIntArr){
+            System.out.print(" " + x);
+        }
 
     }
 }
