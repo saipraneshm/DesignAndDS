@@ -284,25 +284,51 @@ public class SimpleLinkedList {
     }
 
     public Node mergeLists(Node headA, Node headB) {
-       Node a = headA;
-       Node b = headB;
-       PriorityQueue<Integer> q = new PriorityQueue<>();
 
-       Node temp = null;
-       while(a != null ){
-           q.add(a.data);
-           a = a.next;
+       Node left = headA;
+       Node right = headB;
+
+       while( left.next != null){
+           if( left.data > right.data){
+               int temp = left.data;
+               left.data = right.data;
+               right.data = temp;
+           }
+           left = left.next;
        }
 
-       while( b != null){
-           q.add(b.data);
-           b= b.next;
+       //for the last element
+        if( left.data > right.data){
+            int temp = left.data;
+            left.data = right.data;
+            right.data = temp;
+        }
+
+       if(right.data > right.next.data){
+           Node newHead = right.next;
+           Node temp = right;
+           Node current = newHead;
+           Node previous = current;
+           while( temp.data > current.data){
+               previous = current;
+               current = current.next;
+           }
+
+           temp.next = previous.next;
+           previous = temp;
+           left.next = newHead;
+       }else{
+           left.next = right;
        }
+       return headA;
 
-        Iterator<Integer> iterator =  q.iterator();
+    }
 
-       return null;
 
+    private void swap(Node a , Node b){
+        int temp = a.data;
+        a.data = b.data;
+        b.data = temp;
     }
 
 

@@ -63,14 +63,14 @@ public class LinkedList {
         SimpleLinkedList compareAList = new SimpleLinkedList();
         SimpleLinkedList compareBList = new SimpleLinkedList();
 
-        compareAList.addFirst(2);
-        compareAList.addFirst(10);
-        compareAList.addFirst(12);
-        compareAList.addFirst(2);
-        compareAList.addFirst(1);
-        compareAList.addFirst(3);
-        compareAList.addFirst(7);
-        compareAList.addFirst(21);
+            compareAList.addFirst(13);
+            compareAList.addFirst(12);
+            compareAList.addFirst(11);
+            compareAList.addFirst(10);
+            compareAList.addFirst(9);
+            compareAList.addFirst(8);
+            compareAList.addFirst(7);
+            compareAList.addFirst(6);
 
         /*compareBList.addFirst(5);
         compareBList.addFirst(10);
@@ -81,14 +81,14 @@ public class LinkedList {
         compareBList.addFirst(7);
         compareBList.addFirst(21);*/
 
-        compareBList.addFirst(92);
-        compareBList.addFirst(32);
-        compareBList.addFirst(19);
-        compareBList.addFirst(49);
-        compareBList.addFirst(55);
-        compareBList.addFirst(62);
+        compareBList.addFirst(122);
+        compareBList.addFirst(120);
+        compareBList.addFirst(110);
+        compareBList.addFirst(108);
+        compareBList.addFirst(98);
         compareBList.addFirst(78);
-        compareBList.addFirst(3);
+        compareBList.addFirst(69);
+        compareBList.addFirst(4);
 
        /* int i =partitionList
                 .CompareLists(compareAList.getHead(),
